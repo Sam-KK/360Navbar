@@ -1,0 +1,33 @@
+
+
+html,body,div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,blockquote,pre,form,input,textarea,fieldset,table,th,td{
+	margin:0;padding:0
+}
+body,button,input,select,textarea,h1,h2,h3,i{
+	font:normal 12px/1em 'Microsoft YaHei','\5fae\8f6f\96c5\9ed1',arial,helvetica,sans-serif
+	}
+body{min-width:960px}
+ul,li{list-style:none}
+a{text-decoration:none}
+.cls{zoom:1}
+.cls:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.link:hover{text-decoration:underline}
+hr{height:0;border-left:none;border-right:0;border-top:1px dashed #2d2f34;border-bottom:1px dashed #474954}
+.wrapper{width:960px;margin:0 auto}
+.header{border-bottom:10px solid #0b84e9;box-shadow:0 1px 1px #2fa0ff;}
+.header .top{height:60px;background:#fff}
+.header .top h1{float:left;padding:6px 0 0 14px}
+.header .top h1 a{display:block;width:153px;height:0;padding-top:48px;overflow:hidden;background:url(../img/logo.png) no-repeat}
+.header .top .nav{float:right;position:relative;margin-top:16px}
+.header .top .nav li{padding:8px 6px;margin:0 10px;display:inline-block}
+.header .top .nav li a{color:#999}
+.header .top .nav li.current{border-bottom:1px solid #63d029}
+.header .top .nav li.current a{color:#63d029}
+.header .top .nav li.last{margin-right:0;padding-right:0}
+.header .top .nav li.last:hover{text-decoration:underline}
+.header .top .nav li.underscore{position:absolute;width:100%;left:0;bottom:0;margin:0;padding:0}
+.header .top .nav li.underscore i{position:absolute;display:none;height:1px;bottom:0;background:#63d029;-webkit-transition:.5s;-moz-transition:.5s;-ms-transition:.5s;-o-transition:.5s;transition:.5s}
+.content{background:#3a3c48 url(http://p1.qhimg.com/d/inn/05a63fc5/content-bg.png)}.footer{height:120px;padding-top:18px;color:#adafba;background:#2c2f38;text-align:center}.footer p{line-height:24px}
+.ie6 .header .top .nav li,.ie7 .header .top .nav li{display:inline;zoom:1}
+.ie6 .header .top h1 a{background-image:url(http://p0.qhimg.com/d/inn/05a63fc5/logo-8.png);font-size:0}
+.ie6 .header .top .nav li.underscore i{overflow:hidden}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>360导航</title>
+	<link rel="stylesheet" type="text/css" href="css/green.css">
+</head>
+<body>
+<div class="header">
+	<div class="top">
+		<div class="wrapper cls">
+			<h1><a class="logo" href="http://sd.360.cn">360杀毒</a></h1>
+			<ul class="nav cls">
+				<li><a href="">首 页</a></li>
+				<li><a href="">更新日志</a></li>
+				<li class="current"><a href="">下载中心</a></li>
+				<li><a href="" target="">在线求助</a></li>
+				<li><a href="">皮肤下载</a></li>
+				<li><a href="">样本上报</a></li>
+				<li class="last"><a href="">360首页&gt;&gt;</a></li>
+				<li class="underscore"><i style="width: 60px; left: 407.3125px; display: inline;"></i></li>
+			</ul>
+		</div>
+	</div>
+</div>	
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+$(function(){
+	var e=$(".nav"),
+	t=e.offset().left;
+	$(window).on("resize",function(){
+		t=e.offset().left
+	});
+	var n=e.find("li.current"),
+	r={
+		width:n.innerWidth(),left:n.offset().left-t
+	},
+	i=$(".nav .underscore i"),s;
+	e.find("li:not(.underscore):not(.last)").mouseover(function(){
+		var e=$(this);s=setTimeout(function(){
+			i.css({width:e.innerWidth(),left:e.offset().left-t})},100)});
+	var o=function(){clearTimeout(s),i.css(r)};
+	e.mouseleave(o).find("li.last").mouseover(o),i.css(r).show(),n.css("border-color","#fff")
+});
+</script>
+</body>
+</html>
